@@ -1,0 +1,34 @@
+{
+  "name": "google-chat-notification",
+  "version": "1.0.0",
+  "description": "Send message to google chat with github action",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build ./src/index.ts",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "GW VAT&BPSP Team (https://github.com/GW-VAT-BPSP-Team)",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@gateweb/eslint-config-gateweb": "^2.1.1",
+    "@types/node": "^24.1.0",
+    "@vercel/ncc": "^0.38.3",
+    "eslint": "^9.32.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.4",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "packageManager": "pnpm@10.11.0"
+}
