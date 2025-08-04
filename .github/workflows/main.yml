@@ -1,0 +1,21 @@
+name: Test send message
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  send-message:
+    name: Send message
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notification
+        uses: gw-nickchen/google-chat-message-test@v1
+        with:
+          api-url: ${{ secrets.GOOGLE_CHAT_BOT_API_URL }}
+          title: title
+          subtitle: sub title
+          contents: |
+            This is content 1
+            This is content 2
+            This is content 3
+          action-page: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
