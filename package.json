@@ -1,6 +1,6 @@
 {
   "name": "google-chat-notification",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Send message to google chat with github action",
   "main": "index.js",
   "scripts": {
